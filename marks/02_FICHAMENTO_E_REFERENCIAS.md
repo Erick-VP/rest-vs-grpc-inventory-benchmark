@@ -1,3 +1,7 @@
+<!-- ### Artigo X
+* **Título:**
+* **Autor/Ano:**
+* **O que fez:** -->
 # ESTADO DA ARTE E FICHAMENTO
 
 ## Matriz de Artigos Lidos
@@ -30,7 +34,26 @@
 ### Ainda a ser atualizado
 ### Artigo 5 (Viabilidade)
 * **Título:** Uma Análise Comparativa dos Protocolos REST e gRPC na Manutenção e Evolução de Microsserviços
-* **Autor/Ano:** Lucas A. F. Pereira.
-* **O que testou:** Realizou uma análise comparativa de design entre REST, GraphQL e gRPC, focando em escalabilidade e performance para sistemas corporativos e cloud-native.
-* **Resultados Chave:** Confirmou que o gRPC atinge performance superior através de serialização binária e uso de HTTP/2, sendo a escolha ideal para comunicação interna entre microsserviços.
-* **A Lacuna (brecha):** Embora o estudo de Tangudu (2026) forneça métricas de latência e throughput sob carga de requisições concorrentes, ele mantém a análise no nível de design arquitetural e padrões de carga genéricos. Ele não explora especificamente o comportamento dos protocolos diante de matrizes massivas de dados de inventário (o seu cenário logístico), onde o peso do payload em si é o principal vilão.
+* **Autor/Ano:** Lucas A. F. Pereira. (2024)
+* **O que testou:** Fez uma mineração de repositórios do GitHub que usam REST e gRPC com base nas estrelas, forks, etc.
+* **Resultados Chave:** Confirmou que tanto REST e gRPC são totalmente viáveis em projetos, cada um tem sua vantagem.
+* **A Lacuna (brecha):** Ele só fala de viabilidade, não fala nada sobre testes ou do cenários de grandes payloads.
+
+### Artigo 6 (Embasamento/contextualização)
+* **Título:** Analysis of Microservice Evolution using Cohesion Metrics (https://dl.acm.org/doi/epdf/10.1145/3559712.3559716)
+* **Autor/Ano:**: Mateus Gabi Moreira and Breno Bernard Nicolau De França (2022)
+
+### Artigo 7
+* **Título:** Building microservices: designing fine-grained systems (https://books.google.com.br/books?hl=pt-BR&lr=&id=ZvM5EAAAQBAJ&oi=fnd&pg=PT16&dq=Newman,+S.+(2021).+Building+Microservices&ots=uibl9v5HXn&sig=FC3cQk6_wUItqx_9Lq6F9czy5fI#v=onepage&q=Newman%2C%20S.%20(2021).%20Building%20Microservices&f=false)
+* **Autor/Ano:** S Newman - 2021 
+* **O que fez:** Fer um livro explicando a construção sobre microserviços e seu fluxo.
+
+### Artigo 8
+* **Título:** API Management Patterns for Public, Partner, and Group Web API Initiatives with a Focus on Collaboration (https://dl.acm.org/doi/epdf/10.1145/3489449.3490012)
+* **Autor/Ano:** Gloria Bondel, Andre Landgraf, Florian Matthes (2022)
+* **O que fez:** Explica como é a conexão da API com os protocolos (essencial para entender microserviços)
+
+### Artigo 9
+* **Título:** Architectural Styles and the Design of Network-based Software Architectures (https://roy.gbiv.com/pubs/dissertation/fielding_dissertation.pdf)
+* **Autor/Ano:** Roy Thomas Fielding (2000)
+* **O que fez:** Fez um artigo famoso sobre a arquitetura REST na época. 

@@ -33,5 +33,5 @@
 
 
 ## Regras de Escrita (Diretrizes do Professor)
-* **Densidade de Citações:** Quase toda oração que contenha afirmação técnica deve ter repertório/citação. Intercalar apenas quando for análise direta dos meus resultados.
+* **Densidade de Citações:** Quase toda oração que contenha afirmação técnica deve ter repertório/citação. Intercalar apenas quando for análise direta dos meus resultados. Justificativa boa são 4 paragrafos, o último deve ser a sacada para sua problemática.
 * **Tom:** Acadêmico, formal e baseado em evidências empíricas.
