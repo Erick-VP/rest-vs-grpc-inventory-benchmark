@@ -64,3 +64,39 @@ Protocols in Microservice Applications (https://scispace.com/pdf/performance-cha
 * **Autor/Ano:** Prajwal Kiran Kumar, Radhika Agarwal, Rahul Shivaprasad (2021)
 * **O que fez:** Viu as perfomances dos protocolos existentes e testou usando arquivos leves (100kb-10000kb) para teste matemáticos e fins comparativos
 * **Brecha:** O que vou fazer é usar arquivos brutos para testar gargalos e mostrar a importancia para o setor comercial (logística)
+
+### ARTIGOS USADOS E LOCALIZADOS
+
+##### Justificativa (Não escrito ainda)
+
+###### Usados
+
+###### Ordem de uso
+
+##### Problemática
+
+###### Usados
+
+* ***Artigo 1*** (M Johansson, O Isabella (2023))
+* ***Artigo 2*** (N Kumar, P Pagano (2025))
+* ***Artigo 4*** (Ramesh Tangudu (2026))
+* ***Artigo 5*** (Lucas A. F. Pereira. (2024))
+* ***Artigo 7*** (S Newman - 2021)
+* ***Artigo 8*** (Gloria Bondel, Andre Landgraf, Florian Matthes (2022))
+* ***Artigo 9*** (Roy Thomas Fielding (2000))
+* ***Artigo 10*** ( Prajwal Kiran Kumar, Radhika Agarwal, Rahul Shivaprasad (2021))
+
+###### Ordem de uso
+* ***Newman***
+* ***Bondel et al.***
+* ***Kumar et al.***
+* ***Fielding***
+* ***Tangudu***
+* ***Kumar; Pagano***
+* ***Tangudu***
+* ***Johansson; Isabella***
+* ***Pereira***
+* ***Tangudu***
+* ***Tangudu***
+* ***Kumar; Pagano***
+* ***Pereira***
