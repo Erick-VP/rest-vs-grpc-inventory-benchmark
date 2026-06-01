@@ -65,13 +65,37 @@ Protocols in Microservice Applications (https://scispace.com/pdf/performance-cha
 * **O que fez:** Viu as perfomances dos protocolos existentes e testou usando arquivos leves (100kb-10000kb) para teste matemáticos e fins comparativos
 * **Brecha:** O que vou fazer é usar arquivos brutos para testar gargalos e mostrar a importancia para o setor comercial (logística)
 
+### Artigo 11 (Afirmações de perfomance)
+* **Título:** Performance Evaluation of Microservices Communication with REST, GraphQL, and gRPC (https://ijet.ise.pw.edu.pl/index.php/ijet/article/view/10.24425-ijet.2024.149562)
+* **Autor/Ano:** Muhammad Niswar, Reza Arisandy Safruddin, Anugrayani Bustamin, and Iqra Aswad (2024)
+* **O que fez:** Apresentou dados e fórmulas para avaliação de performance de microserviços usando REST, GraphQL e gRPC.
+
 ### ARTIGOS USADOS E LOCALIZADOS
 
-##### Justificativa (Não escrito ainda)
+##### Justificativa (Aperfeiçoando)
 
 ###### Usados
 
+* ***Artigo 1*** (M Johansson, O Isabella (2023))
+* ***Artigo 2*** (N Kumar, P Pagano (2025))
+* ***Artigo 4*** (Ramesh Tangudu (2026))
+* ***Artigo 5*** (Lucas A. F. Pereira. (2024))
+* ***Artigo 7*** (S Newman - 2021)
+* ***Artigo 8*** (Gloria Bondel, Andre Landgraf, Florian Matthes (2022))
+* ***Artigo 9*** (Roy Thomas Fielding (2000))
+* ***Artigo 11*** (Niswar, Arisandy, Bustamin, Iqra (2024))
+
 ###### Ordem de uso
+
+* ***Newman***
+* ***Bondel et al.***
+* ***Fielding***
+* ***Niswar et al.***
+* ***Tangudu***
+* ***Pereira***
+* ***Johansson; Isabella***
+* ***Kumar; Pagano***
+* ***Tangdu***
 
 ##### Problemática
 
