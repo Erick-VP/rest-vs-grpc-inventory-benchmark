@@ -1,0 +1,48 @@
+# Sem limites de CPU/memória para evitar um teto artificial de recursos.
+# O k6 roda no cliente separado para não disputar recursos com os servidores.
+
+name: inventory-benchmark
+
+services:
+  datagen:
+    build:
+      context: .
+      dockerfile: docker/datagen.Dockerfile
+    volumes:
+      - inventory-data:/app/data
+    restart: "no"
+
+  restserver:
+    build:
+      context: .
+      dockerfile: docker/rest.Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - inventory-data:/app/data:ro
+    depends_on:
+      datagen:
+        condition: service_completed_successfully
+    networks:
+      - benchmark-net
+
+  grpcserver:
+    build:
+      context: .
+      dockerfile: docker/grpc.Dockerfile
+    ports:
+      - "9090:9090"
+    volumes:
+      - inventory-data:/app/data:ro
+    depends_on:
+      datagen:
+        condition: service_completed_successfully
+    networks:
+      - benchmark-net
+
+volumes:
+  inventory-data:
+
+networks:
+  benchmark-net:
+    driver: bridge
