@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package inventory;
+
+option go_package = "inventory-benchmark/proto/pb;pb";
+message Location {
+  string warehouse_id   = 1;
+  string warehouse_name = 2;
+  string sector_id      = 3;
+  string sector_name    = 4;
+  string aisle          = 5;
+  string shelf           = 6;
+}
+message Timestamps {
+  string created_at = 1;
+  string updated_at = 2;
+}
+message Item {
+  string item_id            = 1;
+  string sku                = 2;
+  string product_name       = 3;
+  string category           = 4;
+  int32  quantity           = 5;
+  double unit_price         = 6;
+  Location location         = 7;
+  Timestamps timestamps     = 8;
+}
+message AggregateInventoryRequest {
+  int32 limit = 1;
+}
+message AggregateInventoryResponse {
+  repeated Item items = 1;
+  int32 total_count   = 2;
+}
+service InventoryService {
+  rpc AggregateInventory(AggregateInventoryRequest) returns (AggregateInventoryResponse);
+}
