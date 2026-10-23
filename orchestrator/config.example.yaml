@@ -1,0 +1,32 @@
+# Copie para config.yaml e preencha os placeholders antes de executar no CLIENTE.
+# O servidor recebe a carga e executa docker stats; o k6 permanece no cliente.
+ssh:
+  host: "<SERVER_IP>"
+  port: 22
+  user: "<SSH_USER>"
+  # Caminho local da chave privada dedicada; ~ é expandido pelo orquestrador.
+  key_path: ~/.ssh/id_benchmark
+
+protocols:
+  - name: rest
+    k6_script: ../k6/rest_test.js
+    target_env_var: BASE_URL
+    target_value: "http://<SERVER_IP>:8080"
+    compose_service: restserver
+  - name: grpc
+    k6_script: ../k6/grpc_test.js
+    target_env_var: GRPC_ADDR
+    target_value: "<SERVER_IP>:9090"
+    compose_service: grpcserver
+
+run:
+  sizes: [1000, 10000, 50000, 100000]
+  repetitions: 5
+  vus: 10
+  duration: 30s
+  # Intervalo de espera entre chamadas docker stats; a chamada também leva tempo.
+  stats_interval_seconds: 1.0
+  cooldown_seconds: 10.0
+  k6_binary: k6
+  # Relativo ao diretório orchestrator/, de onde main.py deve ser executado.
+  output_dir: ../results
