@@ -217,9 +217,5 @@ números ou conclusões de desempenho. Publique somente uma execução completa 
 revisada. Em CSVs antigos, `latency_p99_or_max_ms` contém o **máximo**, não o p99;
 a análise trata essa coluna como `latency_max_ms` sem modificar o CSV de entrada.
 
-## Licença e autoria
 
-Licença MIT, em `LICENSE` (tradução em português). Autor: `<AUTOR>`.
-Orientação: `<ORIENTADOR>`. Instituição: `<INSTITUICAO>`.
-Conta de publicação no GitHub: `<GITHUB_USER>`. Preencha esses campos antes de
 publicar e revise também as notas acadêmicas em `marks/`.
